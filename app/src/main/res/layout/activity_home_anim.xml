@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:id="@+id/lParentContent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_home">
+
+                <LinearLayout
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:id="@+id/lToolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tvTitleToolbar"
+                        fontPath="fonts/open_sans_semibold.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin15"
+                        android:layout_marginRight="@dimen/margin15"
+                        android:drawablePadding="@dimen/margin10"
+                        android:drawableRight="@drawable/ic_drop_down"
+                        android:gravity="center"
+                        android:text="@string/label_assets_home"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_semi_large"
+                        tools:ignore="MissingPrefix"/>
+
+
+                </LinearLayout>
+
+
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginTop="-180dp"
+                android:id="@+id/lProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lToolbar"
+                android:layout_marginLeft="@dimen/margin15"
+                android:layout_marginRight="@dimen/margin15"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivPhotoProfile"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="@dimen/margin50"
+                        android:layout_height="@dimen/margin50"/>
+
+                    <com.tuyenmonkey.mkloader.MKLoader
+                        android:id="@+id/pbLoadingProfile"
+                        android:layout_width="@dimen/margin20"
+                        android:layout_height="@dimen/margin20"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin15"
+                        app:mk_color="@color/white"
+                        app:mk_type="ThreePulse"
+                        />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin15"
+                    android:layout_marginRight="@dimen/margin15"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        fontPath="fonts/open_sans_semibold.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Putra Arin Wiratama"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_semi_medium"
+                        tools:ignore="MissingPrefix"/>
+
+
+                    <TextView
+                        fontPath="fonts/open_sans_semibold.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin5"
+                        android:text="arinwiratama@gmail.com"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_small_default"
+                        tools:ignore="MissingPrefix"/>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin15"
+                    android:src="@drawable/ic_arrow_right_white_big"/>
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="@dimen/margin10"
+                android:id="@+id/rvList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

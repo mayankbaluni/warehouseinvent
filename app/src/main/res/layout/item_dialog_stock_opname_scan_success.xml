@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin35"
+    android:layout_marginRight="@dimen/margin35"
+    android:background="@drawable/bg_rounded_dialog"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        fontPath="fonts/open_sans_bold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin15"
+        android:layout_marginRight="@dimen/margin15"
+        android:layout_marginTop="@dimen/margin35"
+        android:gravity="center"
+        android:text="@string/label_data_terkirim"
+        android:textColor="@color/color_gray_title_add_dialog"
+        android:textSize="@dimen/text_semi_large"
+        tools:ignore="MissingPrefix"/>
+
+    <TextView
+        android:id="@+id/tvContentDialog"
+        fontPath="fonts/open_sans_regular.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin25"
+        android:layout_marginRight="@dimen/margin25"
+        android:lineSpacingExtra="@dimen/margin3"
+        android:lineSpacingMultiplier="1"
+        android:layout_marginTop="@dimen/margin20"
+        android:gravity="center"
+        android:text="Data produk code TY507041645R2696B berhasil ditambahkan ke sistem"
+        android:textColor="@color/color_gray_title_add_dialog"
+        android:textSize="@dimen/text_semi_medium"
+        tools:ignore="MissingPrefix"/>
+
+
+    <Button
+        android:id="@+id/btnListProduk"
+        fontPath="fonts/open_sans_bold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin45"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin20"
+        android:layout_marginRight="@dimen/margin20"
+        android:layout_marginTop="@dimen/margin25"
+        android:background="@drawable/bg_rounded_btn_dialog_cancel_stock_opname"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin50"
+        android:paddingRight="@dimen/margin50"
+        android:text="@string/label_list_produk"
+        android:textAllCaps="false"
+        android:textColor="@color/color_tv_blue_btn_login"
+        android:textSize="@dimen/text_semi_medium"
+        tools:ignore="MissingPrefix">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnScanResume"
+        fontPath="fonts/open_sans_bold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin45"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin35"
+        android:layout_marginLeft="@dimen/margin20"
+        android:layout_marginRight="@dimen/margin20"
+        android:layout_marginTop="@dimen/margin15"
+        android:background="@drawable/bg_rounded_btn_dialog_add_stock_opname"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin38"
+        android:paddingRight="@dimen/margin38"
+        android:text="@string/label_lanjutkan_scan"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_semi_medium"
+        tools:ignore="MissingPrefix">
+
+    </Button>
+
+
+</LinearLayout>

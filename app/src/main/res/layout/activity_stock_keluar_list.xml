@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/lParentContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/lToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="@drawable/bg_gradient_list"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:id="@+id/tvTitleToolbar"
+                    fontPath="fonts/open_sans_semibold.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:gravity="center"
+                    android:text="@string/label_list_stock_keluar"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_semi_medium"
+                    tools:ignore="MissingPrefix"/>
+
+                <RelativeLayout
+                    android:id="@+id/rBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/ivBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin15"
+                        android:layout_marginRight="@dimen/margin10"
+                        android:src="@drawable/ic_back"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gradient_list"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin10"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:background="@drawable/bg_rounded_search_list_barang"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin12"
+                    android:layout_marginTop="@dimen/margin12"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin15"
+                        android:src="@drawable/ic_search"/>
+
+                    <EditText
+                        android:id="@+id/etSearch"
+                        fontPath="fonts/open_sans_semibold.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin15"
+                        android:layout_marginRight="@dimen/margin15"
+                        android:background="@color/transparent"
+                        android:hint="@string/label_input_nama_barang"
+                        android:imeOptions="actionSearch"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/color_et_search_list_barang"
+                        android:textSize="@dimen/text_default"
+                        tools:ignore="MissingPrefix"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/spGudang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/margin15"
+                    android:layout_marginTop="@dimen/margin15"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:overlapAnchor="false">
+
+
+                </Spinner>
+
+            </LinearLayout>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/margin10">
+
+
+                    </android.support.v7.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+            <include layout="@layout/item_empty_data"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <com.tuyenmonkey.mkloader.MKLoader
+            android:id="@+id/pbLoading"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            app:mk_color="@color/color_blue_gradient_login_2"
+            app:mk_type="Whirlpool"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lBottomLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.tuyenmonkey.mkloader.MKLoader
+            android:id="@+id/pbLoadingBottom"
+            android:layout_width="@dimen/margin35"
+            android:layout_height="@dimen/margin35"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin15"
+            android:layout_marginTop="@dimen/margin15"
+            app:mk_color="@color/color_blue_gradient_login_2"
+            app:mk_type="ThreePulse"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

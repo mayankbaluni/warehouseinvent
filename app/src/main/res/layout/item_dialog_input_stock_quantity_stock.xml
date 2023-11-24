@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_rounded_dialog_input_stock_quantity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_above="@+id/lSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/lToolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <TextView
+                        android:id="@+id/tvTitleToolbar"
+                        fontPath="fonts/open_sans_semibold.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/margin20"
+                        android:layout_marginRight="@dimen/margin20"
+                        android:gravity="center"
+                        android:text="@string/label_input_stock_quantity"
+                        android:textColor="@color/color_tv_blue_btn_login"
+                        android:textSize="@dimen/text_medium"
+                        tools:ignore="MissingPrefix"/>
+
+                    <RelativeLayout
+                        android:id="@+id/rBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/ivBackDialog"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin15"
+                            android:layout_marginRight="@dimen/margin10"
+                            android:src="@drawable/ic_check_blue"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    fontPath="fonts/open_sans_regular.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:layout_marginTop="@dimen/margin15"
+                    android:text="@string/label_silakan_lengkapi_form"
+                    android:textColor="@color/color_gray_tv_name_profil"
+                    android:textSize="@dimen/text_default"
+                    tools:ignore="MissingPrefix"/>
+
+                <TextView
+                    fontPath="fonts/open_sans_semibold.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:layout_marginTop="@dimen/margin30"
+                    android:text="@string/label_quantity"
+                    android:textColor="@color/color_tv_phone_number_profile"
+                    android:textSize="@dimen/text_smallest_medium"
+                    tools:ignore="MissingPrefix"/>
+
+
+                <EditText
+                    android:id="@+id/etQty"
+                    fontPath="fonts/open_sans_semibold.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:layout_marginTop="@dimen/margin5"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    android:background="@color/transparent"
+                    android:hint="@string/label_input_quantity_barang_stock"
+                    android:textColor="@color/color_gray_tv_name_profil"
+                    android:textColorHint="@color/color_gray_hint_quantity_stock"
+                    android:textSize="@dimen/text_default"
+                    tools:ignore="MissingPrefix"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_view"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:layout_marginTop="@dimen/margin5"
+                    android:background="@color/color_gray_border_dialog"/>
+
+                <TextView
+                    fontPath="fonts/open_sans_semibold.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:layout_marginTop="@dimen/margin20"
+                    android:text="@string/label_tipe_quantity"
+                    android:textColor="@color/color_tv_phone_number_profile"
+                    android:textSize="@dimen/text_smallest_medium"
+                    tools:ignore="MissingPrefix"/>
+
+
+                <Spinner
+                    android:id="@+id/spTipeQuantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="@dimen/margin10"
+                    android:overlapAnchor="false">
+
+                </Spinner>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_view"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:layout_marginTop="@dimen/margin5"
+                    android:background="@color/color_gray_border_dialog"/>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/lSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btnSubmit"
+                fontPath="fonts/open_sans_bold.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin50"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin15"
+                android:layout_marginTop="@dimen/margin15"
+                android:background="@drawable/bg_rounded_btn_dialog_add_stock_opname"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin70"
+                android:paddingRight="@dimen/margin70"
+                android:text="@string/label_submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_semi_medium"
+                tools:ignore="MissingPrefix">
+
+            </Button>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

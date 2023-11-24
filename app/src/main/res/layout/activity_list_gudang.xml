@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lParentContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/bg_home">
+
+                <RelativeLayout
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
+                    android:id="@+id/lToolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize">
+
+                    <TextView
+                        android:id="@+id/tvTitleToolbar"
+                        fontPath="fonts/open_sans_semibold.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/margin20"
+                        android:layout_marginRight="@dimen/margin20"
+                        android:gravity="center"
+                        android:text="@string/label_title_page_list_gudang"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_semi_medium"
+                        tools:ignore="MissingPrefix"/>
+
+                    <RelativeLayout
+                        android:id="@+id/rBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/ivBack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin15"
+                            android:layout_marginRight="@dimen/margin10"
+                            android:src="@drawable/ic_back"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-130dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tvListHeader"
+                    fontPath="fonts/open_sans_semibold.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:text="@string/label_header_list_gudang"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_default"
+                    android:visibility="gone"
+                    tools:ignore="MissingPrefix"/>
+
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10">
+
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lLoading"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.tuyenmonkey.mkloader.MKLoader
+            android:id="@+id/pbLoading"
+            android:layout_centerInParent="true"
+            android:layout_height="@dimen/margin50"
+            android:layout_width="@dimen/margin50"
+            android:layout_gravity="center"
+            app:mk_color="@color/color_blue_gradient_login_2"
+            app:mk_type="Whirlpool"
+            />
+
+    </LinearLayout>
+
+    <include layout="@layout/item_empty_data"/>
+
+</RelativeLayout>

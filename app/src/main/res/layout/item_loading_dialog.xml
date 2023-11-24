@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginLeft="@dimen/margin45"
+    android:layout_marginRight="@dimen/margin45"
+    android:background="@drawable/bg_rounded_dialog"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.tuyenmonkey.mkloader.MKLoader
+            android:layout_height="@dimen/margin50"
+            android:layout_width="@dimen/margin50"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin15"
+            app:mk_color="@color/color_blue_gradient_login_2"
+            app:mk_type="Whirlpool"
+            />
+
+        <TextView
+            android:id="@+id/tvLoading"
+            fontPath="fonts/open_sans_semibold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin15"
+            android:layout_marginLeft="@dimen/margin15"
+            android:layout_marginRight="@dimen/margin15"
+            android:layout_marginTop="@dimen/margin10"
+            android:gravity="center"
+            android:text="@string/label_loading_title_dialog"
+            android:textColor="@color/color_gray_tv_name_profil"
+            android:textSize="@dimen/text_medium"
+            tools:ignore="MissingPrefix"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

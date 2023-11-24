@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="A400red">#ff1744</color>
+
+    <!--Light Theme-->
+    <color name="per54black">#D6E4FE</color>
+    <color name="per42black">#D6E4FE</color>
+    <color name="per06black">#D6E4FE</color>
+
+    <!--Dark Theme-->
+    <color name="per70white">#D6E4FE</color>
+    <color name="per50white">#D6E4FE</color>
+    <color name="per10white">#D6E4FE</color>
+
+</resources>

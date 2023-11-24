@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.salor.ventgo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+
+    <application
+        android:name="com.salor.ventgo.ui.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name="com.salor.ventgo.ui.activity.login.SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.HomeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.profile.ProfileActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.stock_opname_assets.ListGudangActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.barang_assets.ListBarangActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.barang_assets.detail_barang.DetailBarangActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.barang_assets.detail_gudang.DetailGudangActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.stock_opname_assets.riwayat.StockOpnameHistoryListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.stock_opname_assets.list_scanned_product.StockOpnameListScannedProductActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.stock_opname_assets.list_scanned_product.detail.StockOpnameListDetailScannedProductActivity"
+            android:screenOrientation="portrait" />
+
+        <!--<activity-->
+        <!--android:name=".ui.activity.stock_opname_assets.scanner.ScannerActivity"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:windowSoftInputMode="adjustPan"/>-->
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.assets_keluar.ScannerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.assets_keluar.list.AssetsKeluarListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.assets_keluar.list.DetailAssetsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.assets_masuk.ScannerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.assets_keluar.list.detail_scan.AssetsKeluarDetailScanActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.assets_keluar.FormAssetsKeluarActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.assets_masuk.FormAssetsMasukActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.assets_masuk.list.DetailAssetsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.assets_masuk.list.AssetsMasukListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.assets_masuk.list.detail_scan.AssetsMasukDetailScanActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.stock_masuk.ScannerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.stock_masuk.FormStockMasukActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.stock_masuk.list.StockMasukListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.stock_masuk.list.detail.StockMasukDetailBarangActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.stock_keluar.ScannerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.stock_keluar.FormStockKeluarActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.stock_keluar.list.StockKeluarListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.stock_keluar.list.detail.StockKeluarDetailBarangActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.barang_stock.ListBarangActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.barang_stock.detail_stock.DetailBarangStockActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.stock_opname_stock.ListGudangActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.stock_opname_stock.riwayat.StockOpnameHistoryListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.stock_opname_stock.scanner.ScannerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.stock_opname_stock.list_scanned_product.StockOpnameListScannedProductActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.login.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.profile.ChangePasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.profile.camera.UpdateProfileActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.salor.ventgo.ui.activity.stock_opname_assets.list_scanned_product.scan.ScannerActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

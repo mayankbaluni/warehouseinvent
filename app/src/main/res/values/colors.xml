@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">@color/black</color>
+    <color name="colorAccent">#D6E4FE</color>
+
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="color_blue_gradient_login_1">#2C86F9</color>
+    <color name="color_blue_gradient_login_2">#175EB9</color>
+
+    <color name="color_bg_edit_text_login">#6b9ce7</color>
+
+    <color name="color_tv_blue_btn_login">#165EB9</color>
+
+    <color name="color_tv_copyright_login">#8BAEDC</color>
+
+    <color name="color_black_tv_title_item_home">#393557</color>
+    
+    <color name="color_tv_gray_tv_desc_item_home">#9A9A9A</color>
+
+    <color name="color_gray_tv_name_profil">#555555</color>
+
+    <color name="color_tv_phone_number_profile">#BCBCBC</color>
+
+    <color name="color_bg_divider_profile">#EFEFEF</color>
+
+    <color name="color_btn_red_logout">#FB6B6B</color>
+
+    <color name="color_bg_rounded_search_list_barang_product">#6197eb</color>
+
+    <color name="color_et_search_list_barang">#a9cafc</color>
+
+    <color name="color_tv_title_item_list_barang">#2D3642</color>
+
+    <color name="color_gray_title_add_dialog">#4A4A4A</color>
+
+    <color name="color_gray_border_dialog">#EBEBEB</color>
+
+    <color name="color_gray_hint_quantity_stock">#E5E5E5</color>
+
+    <color name="color_bg_status_pending">#df841c</color>
+
+</resources>

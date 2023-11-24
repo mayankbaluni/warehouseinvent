@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rounded_dialog"
+    android:orientation="vertical"
+    android:layout_marginRight="@dimen/margin35"
+    android:layout_marginLeft="@dimen/margin35">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin20"
+                android:layout_marginTop="@dimen/margin25"
+                fontPath="fonts/open_sans_semibold.ttf"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/margin20"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/label_header_pilih_opsi_photo"
+                android:textSize="@dimen/text_large"
+                tools:ignore="MissingPrefix"/>
+
+
+
+            <!--<TextView-->
+                <!--android:layout_below="@+id/text1"-->
+                <!--android:id="@+id/text2"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/feed_item_margin_10"-->
+                <!--android:layout_marginRight="20dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:fontFamily="sans-serif"-->
+                <!--android:gravity="center"-->
+                <!--android:text=""-->
+                <!--android:textColor="@color/background_halaman"-->
+                <!--android:textSize="10pt" />-->
+
+
+        </LinearLayout>
+
+        <!--<android.support.v7.widget.SwitchCompat-->
+        <!--android:id="@+id/switchDialogSound"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/heightButton"-->
+        <!--android:fontFamily="sans-serif"-->
+        <!--android:textColor="@color/textGrey"-->
+        <!--android:textSize="@dimen/textMedium"-->
+        <!--android:text="@string/sound"/>-->
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/margin25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin35"
+            android:orientation="horizontal">
+
+
+
+            <Button
+                android:id="@+id/btnGallery"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin50"
+                android:layout_marginBottom="15dp"
+                android:text="@string/label_gallery"
+                android:layout_marginLeft="@dimen/margin20"
+                fontPath="fonts/open_sans_bold.ttf"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_semi_medium"
+                android:background="@drawable/bg_rounded_btn_dialog_cancel_stock_opname"
+                android:gravity="center"
+                tools:ignore="MissingPrefix">
+
+
+            </Button>
+
+            <Button
+                android:id="@+id/btnCamera"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_semi_medium"
+                android:layout_height="@dimen/margin50"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/margin20"
+                android:layout_weight="1"
+                android:text="@string/label_camera"
+                fontPath="fonts/open_sans_bold.ttf"
+                android:background="@drawable/bg_rounded_btn_dialog_add_stock_opname"
+                android:gravity="center"
+                tools:ignore="MissingPrefix">
+
+
+            </Button>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

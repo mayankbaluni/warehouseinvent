@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:background="@drawable/bg_gradient_login"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvTitleToolbarDialog"
+            fontPath="fonts/open_sans_semibold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin15"
+            android:layout_marginRight="@dimen/margin15"
+            android:drawablePadding="@dimen/margin10"
+            android:drawableRight="@drawable/ic_drop_down_up_white"
+            android:gravity="center"
+            android:text="@string/label_assets_home"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_semi_large"
+            tools:ignore="MissingPrefix"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lAssets"
+        android:layout_marginTop="@dimen/margin20"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/margin15"
+            android:src="@drawable/ic_product_assets_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvAssets"
+            fontPath="fonts/open_sans_semibold.ttf"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_marginRight="@dimen/margin15"
+            android:text="@string/label_assets"
+            android:textColor="@color/color_tv_blue_btn_login"
+            android:textSize="@dimen/text_semi_medium"
+            tools:ignore="MissingPrefix"/>
+
+        <ImageView
+            android:id="@+id/ivCheckAssets"
+            android:layout_marginRight="@dimen/margin20"
+            android:src="@drawable/ic_check_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lStock"
+        android:layout_marginBottom="@dimen/margin15"
+        android:layout_marginTop="@dimen/margin15"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/margin15"
+            android:src="@drawable/ic_product_stock_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvStock"
+            fontPath="fonts/open_sans_semibold.ttf"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_marginRight="@dimen/margin15"
+            android:text="@string/label_stock"
+            android:textColor="@color/color_gray_tv_name_profil"
+            android:textSize="@dimen/text_semi_medium"
+            tools:ignore="MissingPrefix"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/ivCheckStock"
+            android:layout_marginRight="@dimen/margin20"
+            android:src="@drawable/ic_check_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
